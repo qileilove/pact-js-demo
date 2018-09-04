@@ -1,0 +1,36 @@
+{
+  "consumer": {
+    "name": "QileiTestClient"
+  },
+  "provider": {
+    "name": "QileiTestProductService"
+  },
+  "interactions": [
+    {
+      "description": "a request to get id=1 user",
+      "providerState": "it has one User",
+      "request": {
+        "method": "GET",
+        "path": "/user",
+        "query": "id=1"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": [
+          {
+            "id": 1,
+            "name": "God"
+          }
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
