@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node provider/index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,19 @@
   "bugs": {
     "url": "https://github.com/qileilove/pact-js-demo/issues"
   },
-  "homepage": "https://github.com/qileilove/pact-js-demo#readme"
+  "homepage": "https://github.com/qileilove/pact-js-demo#readme",
+  "devDependencies": {
+    "@pact-foundation/pact": "^5.9.1",
+    "@pact-foundation/pact-node": "^6.19.11",
+    "body-parser": "^1.18.3",
+    "chai": "^4.1.2",
+    "express": "^4.16.3",
+    "lodash": "^4.17.10",
+    "mocha": "^5.2.0",
+    "npm-run-all": "^4.1.3",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5",
+    "sinon": "^6.1.5",
+    "sinon-chai": "^3.2.0"
+  }
 }
