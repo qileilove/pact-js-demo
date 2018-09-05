@@ -28,8 +28,8 @@ describe('product handling', () => {
     it('should get all users from server', async function () {
       await provider.addInteraction(interactions.getUser)
 
-      const productList = await client.getUser({'id':'1'})
-      expect(productList).to.eql([  {  id: 1,name: 'God' }])
+      const productList = await client.getUser()
+      expect(productList).to.eql(  {  id: 1,name: 'God' })
 
       await provider.verify()
     })

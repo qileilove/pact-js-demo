@@ -14,6 +14,7 @@ app.use((req, res, next) => {
 });
 
 app.get('/user/:id', (req, res) => {
+    res.send(req.params)
   res.end(JSON.stringify({
     id: 1,
     name: 'God'

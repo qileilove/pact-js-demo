@@ -11,20 +11,17 @@
       "providerState": "it has one User",
       "request": {
         "method": "GET",
-        "path": "/user",
-        "query": "id=1"
+        "path": "/user/1"
       },
       "response": {
         "status": 200,
         "headers": {
           "Content-Type": "application/json; charset=utf-8"
         },
-        "body": [
-          {
-            "id": 1,
-            "name": "God"
-          }
-        ]
+        "body": {
+          "id": 1,
+          "name": "God"
+        }
       }
     }
   ],
